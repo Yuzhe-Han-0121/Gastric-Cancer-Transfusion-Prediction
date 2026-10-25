@@ -13,7 +13,7 @@ st.set_page_config(
 )
 
 # ============ Paths ============
-MODEL_DIR = r"E:\胃部手术术中血浆输注预测模型\结果\网页设计\model"
+MODEL_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'model')
 
 @st.cache_resource
 def load_artifacts():
